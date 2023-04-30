@@ -9,7 +9,7 @@ import VideoDescription from "./VideoDescription";
 
 const Screen: FC = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={'/Portfolio_io'}>
             <Header/>
             <Routes>
                 <Route path={'/'} element={<Home/>}/>
