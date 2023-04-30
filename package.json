@@ -1,5 +1,6 @@
 {
   "name": "your-app-name",
+  "homepage": "https://hovogalstyan.github.io/Portfolio_io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
