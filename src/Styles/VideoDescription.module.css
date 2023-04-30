@@ -1,0 +1,16 @@
+.VideoDescription{
+    width: 100%;
+    padding: 1.5rem 1rem;
+}
+.container{
+    width: 100%;
+    height: 50vmin;
+    background: rgba(0,0,0,0.8);
+}
+.VideoDescription p{
+    color: blue;
+}
+.VideoDescription p a{
+    color: white;
+    font-size: 11px;
+}

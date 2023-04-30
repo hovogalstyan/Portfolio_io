@@ -1,0 +1,201 @@
+.Projects {
+    width: 100%;
+    display: flex;
+    padding: 1.7rem 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.items {
+    width: calc(100% / 3 - 5px);
+    padding: 0.5rem 0.3rem;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 0.2rem 0;
+    border-radius: 5px;
+    position: relative;
+    transition: ease-in-out 0.8s;
+}
+.active_items{
+    transform: scale(1.1);
+    z-index: 999;
+}
+
+.video_block {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.video_block video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.items a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding-bottom: 0.1rem;
+}
+
+.icons_block {
+    width: 100%;
+    padding: 0.3rem 22px 0.3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left_block {
+    display: flex;
+    align-items: center;
+}
+
+.favorite {
+    font-size: 22px;
+    color: white;
+    z-index: 998;
+}
+
+
+.contact_icons_btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 0.4rem;
+}
+
+.active_favorite  {
+    animation: bounce-in-bck 1.1s both;
+    z-index: 9999;
+}
+
+@keyframes bounce-in-bck {
+    0% {
+        transform: scale(7);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55% {
+        transform: scale(1.5);
+        animation-timing-function: ease-in;
+    }
+    72% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+    81% {
+        transform: scale(1.24);
+        animation-timing-function: ease-in;
+    }
+    89% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+    95% {
+        transform: scale(1.04);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+.Contact_icons_projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+}
+
+.Contact_icons_projects a {
+    font-size: 25px;
+    color: #0074d9;
+}
+
+.active_contact_projects_icons a:nth-child(1) {
+    animation: roll-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.active_contact_projects_icons a:nth-child(2) {
+    animation: roll-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.active_contact_projects_icons a:nth-child(3) {
+    animation: roll-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+@keyframes roll-in-blurred-left {
+    0% {
+        transform: translateX(-1000px) rotate(-720deg);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes roll-in-blurred-top {
+    0% {
+        transform: translateY(-800px) rotate(-720deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes roll-in-blurred-right {
+    0% {
+        transform: translateX(1000px) rotate(720deg);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.btn_bottom_active {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.active_items .btn_bottom_active{
+    color: red;
+}
+
+@media only screen and (max-width: 680px) {
+    .items{
+        width: calc(100% / 2  - 5px);
+    }
+}
+@media only screen and (max-width: 576px) {
+    .Projects{
+        padding: 1.5rem 1rem;
+    }
+    .items{
+        width: calc(100% / 1  - 5px);
+    }
+}
+

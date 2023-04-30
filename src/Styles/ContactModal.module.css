@@ -1,0 +1,189 @@
+.modal_block{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+}
+.contact{
+    width: 58%;
+    min-height: 120px;
+    padding: 0.5rem 0.2rem;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.active_contact_modal{
+    top: 0;
+}
+.active_contact_modal .contact{
+    animation: slide-in-elliptic-top-fwd 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes slide-in-elliptic-top-fwd {
+    0% {
+        transform: translateY(-600px) rotateX(-30deg) scale(0);
+        transform-origin: 50% 100%;
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) rotateX(0) scale(1);
+        transform-origin: 50% 1400px;
+        opacity: 1;
+    }
+}
+
+.Anim_icons_block{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1rem 0.1rem;
+    overflow: hidden;
+}
+.icons_block{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+.icons {
+    opacity: 0;
+}
+
+.icons a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+.active_modal_icons .icons:nth-child(1) {
+    animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.active_modal_icons .icons:nth-child(2) {
+    animation: slide-in-blurred-top 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.active_modal_icons .icons:nth-child(3) {
+    animation: slide-in-blurred-top 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+@keyframes slide-in-blurred-top {
+    0% {
+        transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        transform-origin: 50% 0%;
+        filter: blur(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scaleY(1) scaleX(1);
+        transform-origin: 50% 50%;
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+.tel{
+    padding: 0 0.7rem;
+}
+.tel a {
+    text-decoration: none;
+
+}
+
+.tel .icons_items {
+    color: white;
+    margin: 0 5px;
+    font-size: 25px;
+    font-family: "Tilt Prism",sans-serif;
+    opacity: 0;
+}
+
+.tel_active_class:nth-child(1) {
+    animation: slide-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.tel_active_class:nth-child(2) {
+    animation: slide-in-blurred-left 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.tel_active_class:nth-child(3) {
+    animation: slide-in-blurred-left 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.tel_active_class:nth-child(4) {
+    animation: slide-in-blurred-left 2.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+.tel_active_class:nth-child(5) {
+    animation: slide-in-blurred-left 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+.tel_active_class:nth-child(6) {
+    animation: slide-in-blurred-left 3.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+.tel_active_class:nth-child(7) {
+    animation: slide-in-blurred-left 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+.tel_active_class:nth-child(8) {
+    animation: slide-in-blurred-left 4.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+.tel_active_class:nth-child(9) {
+    animation: slide-in-blurred-left 5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+@keyframes slide-in-blurred-left {
+    0% {
+        transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        transform-origin: 100% 50%;
+        filter: blur(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) scaleY(1) scaleX(1);
+        transform-origin: 50% 50%;
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 985px) {
+    .active_contact_modal .contact{
+        width: 49%;
+        background: rgba(0,0,0,0.8);
+    }
+}
+@media only screen and (max-width: 894px) {
+ .active_contact_modal .contact{
+     width: 75%;
+     top: 85vh;
+ }
+}
+
+@media only screen and (max-width: 616px) {
+    .active_contact_modal .contact{
+        width: 75%;
+        top: 65vh;
+    }
+}
+@media only screen and (max-width: 476px) {
+    .active_contact_modal .contact{
+        width: 90%;
+        top: 50vh;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .active_contact_modal .contact{
+        width: 90%;
+        top: 40vh;
+    }
+    .contact .icons_block span a{
+        font-size: 18px;
+    }
+    .contact .tel_active_class{
+        font-size: 18px;
+    }
+}

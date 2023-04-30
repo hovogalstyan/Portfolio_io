@@ -1,0 +1,35 @@
+.About {
+    width: 100%;
+    min-height: 91vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.7rem 1rem;
+}
+
+.Description_text {
+    width: 50%;
+    padding: 1rem 0;
+}
+
+.Description_text p {
+    color: white;
+    max-width: 350px;
+}
+
+@media only screen and (max-width: 894px) {
+    .About {
+        flex-direction: column-reverse;
+    }
+
+    .Description_text {
+        width: 100%;
+        padding: 1.9rem 0;
+    }
+
+    .Description_text p {
+        max-width: 100%;
+    }
+}
+
+

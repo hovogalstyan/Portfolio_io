@@ -1,0 +1,47 @@
+.Home{
+    width: 100%;
+    padding: 1.7rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.Description {
+    padding: 1.8rem 0;
+}
+
+.Description h1 {
+    font-weight: 900;
+    background-image: linear-gradient(to top, #fff, blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-family: "Tilt Prism", sans-serif;
+    margin: 0.2rem 0;
+}
+
+.Description h2 {
+    line-height: 31px;
+    background-image: linear-gradient(to right, #fff, red);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Castoro Titling', sans-serif;
+    text-transform: initial;
+}
+
+.Description p {
+    color: white;
+    max-width: 350px;
+}
+
+.open_contact_modal{
+    padding: 0.6rem 1.5rem;
+    background: none;
+    border: 1px solid #ffffff;
+    color: white;
+    margin: 1.2rem 0;
+    cursor: pointer;
+}
+@media only screen and (max-width: 894px) {
+ .Home{
+     flex-direction: column-reverse;
+ }
+}
+
