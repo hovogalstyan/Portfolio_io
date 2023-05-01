@@ -9,6 +9,7 @@
 }
 .VideoDescription p{
     color: blue;
+    margin-top: 1rem;
 }
 .VideoDescription p a{
     color: white;

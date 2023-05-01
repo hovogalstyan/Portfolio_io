@@ -309,8 +309,6 @@
     .Nav ul {
         flex-direction: column;
         justify-content: flex-start;
-        overflow: hidden;
-        position: relative;
     }
 
     .Nav ul li {
@@ -318,11 +316,12 @@
     }
 
     .active_modal {
-        left: 20px;
-        top: 105px;
+        left: 51px;
+        top: 139px;
         align-items: center;
         display: flex;
         width: 120px;
+        overflow: hidden;
     }
 
     .active_modal figure {

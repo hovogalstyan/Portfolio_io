@@ -11,6 +11,17 @@ export default [
         ]
     },
     {
+        id: 155,
+        name: "Next js Node js Redux saga ",
+        url: require('../../Components/Images/Video/Node.js.mp4'),
+        git: "https://github.com/hovogalstyan/React-Native-Redux-Toolkit",
+        contactList: [
+            {urls: 'https://www.facebook.com/ho.vo.10297'},
+            {urls: 'https://instagram.com/hovo_99___?igshid=ZDdkNTZiNTM='},
+            {urls: 'https://github.com/hovogalstyan'}
+        ]
+    },
+    {
         id: 2,
         name: "Html/css/scss",
         url: require('../../Components/Images/Video/Mogo...mp4'),
